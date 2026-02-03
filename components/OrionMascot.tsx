@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ORION_MASCOT_EMOTIONS } from '../constants';
 
@@ -62,7 +61,7 @@ const OrionMascot: React.FC<OrionMascotProps> = ({
           <img 
             src={currentImage} 
             alt={`Orión - Estado: ${emotion}`}
-            className={`w-full h-full object-cover transition-transform duration-500 ${isTalking ? 'animate-talk' : 'animate-float'}`}
+            className={`imagen-global w-full h-full object-cover transition-transform duration-500 ${isTalking ? 'animate-talk' : 'animate-float'}`}
           />
         </div>
       </div>

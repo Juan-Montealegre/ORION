@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { CAREER_CATALOG } from '../constants';
 
@@ -29,7 +28,7 @@ const Comparador: React.FC = () => {
           >
             <img 
               src={subject.img} 
-              className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity"
+              className="imagen-global absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity"
               alt={subject.name}
             />
             <span className="relative z-10 text-[8px] font-black opacity-0 group-hover:opacity-100 transition-opacity uppercase text-center p-2 text-white drop-shadow-lg">
@@ -69,7 +68,7 @@ const Comparador: React.FC = () => {
 
           <div className="flex-grow space-y-12">
              <div className="h-40 w-full rounded-2xl overflow-hidden relative">
-                <img src={(leftCareer as any).image} className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="Career" />
+                <img src={(leftCareer as any).image} className="imagen-global w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="Career" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] to-transparent"></div>
              </div>
 
@@ -111,7 +110,7 @@ const Comparador: React.FC = () => {
 
           <div className="flex-grow space-y-12">
              <div className="h-40 w-full rounded-2xl overflow-hidden relative">
-                <img src={(rightCareer as any).image} className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="Career" />
+                <img src={(rightCareer as any).image} className="imagen-global w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="Career" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
              </div>
 
