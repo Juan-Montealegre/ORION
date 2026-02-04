@@ -28,13 +28,30 @@ const App: React.FC = () => {
     setIsAdmin(false);
   };
 
+
+  // Bloque visual de prueba para verificar Tailwind
+  const tailwindTest = (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900">
+      <h1 className="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">¡Tailwind CSS Funciona!</h1>
+      <p className="text-lg text-slate-200 mb-6">Puedes personalizar tu app usando clases de Tailwind.</p>
+      <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-lg transition-all">Botón de ejemplo</button>
+    </div>
+  );
+
   if (!isLoggedIn) {
-    return <Auth onLogin={handleLogin} />;
+    return (
+      <>
+        {tailwindTest}
+        <Auth onLogin={handleLogin} />
+      </>
+    );
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#020617] text-slate-100 overflow-x-hidden selection:bg-red-500/30 animate-in fade-in duration-1000">
-      {/* Header Global */}
+    <>
+      {tailwindTest}
+      <div className="min-h-screen flex flex-col bg-[#020617] text-slate-100 overflow-x-hidden selection:bg-red-500/30 animate-in fade-in duration-1000">
+        {/* Header Global */}
       <header className="sticky top-0 z-50 bg-[#020617]/60 backdrop-blur-xl border-b border-white/5">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4 cursor-pointer" onClick={() => setActiveTab('ia')}>
@@ -96,7 +113,7 @@ const App: React.FC = () => {
          </div>
       </footer>
     </div>
-  );
+  </>);
 };
 
 export default App;
