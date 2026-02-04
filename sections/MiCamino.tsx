@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const MiCamino: React.FC = () => {
@@ -6,7 +7,7 @@ const MiCamino: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-12 items-center">
         <div className="relative">
           <div className="w-32 h-32 rounded-full border-4 border-[#D32F2F] p-1">
-             <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aspirante" className="imagen-global w-full h-full rounded-full bg-slate-800" alt="Avatar" />
+             <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aspirante" className="w-full h-full rounded-full bg-slate-800" alt="Avatar" />
           </div>
           <div className="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-[#020617] flex items-center justify-center text-[10px]">✨</div>
         </div>

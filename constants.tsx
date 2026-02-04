@@ -5,10 +5,10 @@ export const UNILIBRE_RED = '#D32F2F';
 
 // Mapeo de imágenes para las emociones de Orión
 export const ORION_MASCOT_EMOTIONS = {
-  idle: 'https://api.dicebear.com/7.x/bottts/svg?seed=OrionFox&backgroundColor=d32f2f&eyes=eyes',
-  thinking: 'https://api.dicebear.com/7.x/bottts/svg?seed=OrionFox&backgroundColor=d32f2f&eyes=round',
-  happy: 'https://api.dicebear.com/7.x/bottts/svg?seed=OrionFox&backgroundColor=d32f2f&eyes=joy',
-  confused: 'https://api.dicebear.com/7.x/bottts/svg?seed=OrionFox&backgroundColor=d32f2f&eyes=sensor',
+  idle: '/orion_mascot.png',
+  thinking: '/orion_mascot.png',
+  happy: '/orion_mascot.png',
+  confused: '/orion_mascot.png',
 };
 
 export const ORION_MASCOT_URL = ORION_MASCOT_EMOTIONS.idle; 

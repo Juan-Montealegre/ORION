@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Universidades: React.FC = () => {
@@ -53,7 +54,7 @@ const Universidades: React.FC = () => {
                  onError={(e) => {
                    (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800`;
                  }}
-                 className="imagen-global w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                  alt={sede.name} 
                />
                <div className="absolute top-4 left-4 z-20 w-8 h-8 bg-[#D32F2F] rounded-lg flex items-center justify-center text-sm shadow-lg">
