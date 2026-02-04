@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './src/style.css';
+// import './src/style.css';
 import { RequestStatus } from './types';
 import Dashboard from './sections/Dashboard';
 import Comparador from './sections/Comparador';
