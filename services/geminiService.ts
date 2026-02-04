@@ -4,7 +4,7 @@ import { OrientationResponse } from "../types";
 import { CAREER_CATALOG } from "../constants";
 import { API_CONFIG } from "./apiConfig";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const SYSTEM_INSTRUCTION = `
 Actúa como Orión, un Ecosistema de Inteligencia Artificial desarrollado por la Facultad de Ingeniería de la Universidad Libre de Colombia.
